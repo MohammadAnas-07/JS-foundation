@@ -12,4 +12,5 @@ console.log(userName)
 console.log(typeof userName) */
 
 let today = new Date()
-console.log(today.getDate())
+//console.log(today.getDate())
+

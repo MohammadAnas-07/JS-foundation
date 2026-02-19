@@ -62,3 +62,6 @@ Check if "London" is in the array and store the result in a variable named "isLo
 let cityBucketList = ["Kyoto","London","Cape Town","Vancouver"]
 let isLondonInList = cityBucketList.includes("London")
 console.log(isLondonInList)
+
+let arr = [1,2,3,4]
+console.log(arr.indexOf(3))

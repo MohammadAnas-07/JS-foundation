@@ -20,8 +20,35 @@ console.log(orderConfirmation) */
 /* 3. Write an arrow function named `calculateTotal` that takes two parameters: `price` and `quantity`. The function should return the total cost by multiplying the `price` and `quantity`.
 Store the result in a variable named `totalCost`. */
 
-const calculateTotal = (price, quantity)=>{
+/* const calculateTotal = (price, quantity)=>{
   let totalCost = price * quantity
   return totalCost
 }
-console.log(calculateTotal(5,3))
+console.log(calculateTotal(5,3)) */
+
+/* 4. Write a function named `processTeaOrder` that takes another function `makeTea` as a parameter and calls it with the argument `earl grey`.
+Return the result of calling `makeTea` */
+
+/* function makeTea(typeOfTea){
+  return `makeTea: ${typeOfTea}`
+}
+
+function processTeaOrder(teaFunction){
+  return teaFunction('earl grey')
+}
+let order = processTeaOrder(makeTea)
+console.log(order) */
+
+
+/* 5. Write a function named `createTeaMaker` that returns another function. The returned function should take one parameter, `teaType,` and returns a message like "Making green tea".
+Store the returned function in a variable named `teaMaker` and call it with `"green tea"` */
+
+
+function createTeaMaker(){
+  return  function(teaType){
+    return `Making ${teaType}`
+  }
+}
+let teaMaker = createTeaMaker()
+let result = teaMaker("green tea")
+console.log(result)

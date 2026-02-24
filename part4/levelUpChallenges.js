@@ -141,3 +141,4 @@ for (const fruit of fruits) {
   shortFruits.push(fruit)
 }
 console.log(shortFruits)
+

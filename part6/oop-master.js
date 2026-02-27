@@ -53,4 +53,49 @@ let myCar = new Car("Toyota","Corolla")
 console.log(myCar.drive()) */
 
 let VehOne = new Vehicle("Toyota","Corolla")
-console.log(VehOne.make)
+/* console.log(VehOne.make) */
+
+
+//Encapsulation
+
+class BankAccount{
+  #balance = 0;
+
+  deposit(amount){
+    this.#balance += amount;
+    return this.#balance;
+  }
+
+  getBalance(){
+    return `$ ${this.#balance}`
+  }
+}
+
+let account = new BankAccount()
+/* console.log(account.getBalance()) */
+
+
+//Abstraction
+
+class CoffeMachine{
+  start(){
+    // call DB
+    // filter value
+    return `Starting the machine...`
+  }
+  brewCoffee(){
+    // complex calculation
+    return `Brewing coffee`
+  }
+
+  pressStartButton(){
+    let msgone = this.start()
+    let msgtwo = this.brewCoffee()
+    return `${msgone} + ${msgtwo}`
+  }
+}
+let myMachine = new CoffeMachine()
+/* console.log(myMachine.start())
+console.log(myMachine.brewCoffee())
+ */
+console.log(myMachine.pressStartButton())
